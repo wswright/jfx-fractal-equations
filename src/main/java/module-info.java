@@ -11,5 +11,7 @@ module org.example.fractal.equations {
 			ZCubedPlusC,
 			ZSquaredMinusC,
 			ZSquaredOverC,
-			ZSquaredPlusZPlusC;
+			ZSquaredPlusZPlusC,
+			ZTimesSinZSquaredPlusC,
+			ZSquaredDividesSinCMinusZSquared;
 }

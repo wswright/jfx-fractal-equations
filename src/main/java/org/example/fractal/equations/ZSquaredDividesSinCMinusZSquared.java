@@ -1,17 +1,16 @@
 package org.example.fractal.equations;
 
 import org.example.fractal.lib.ComplexAlgebraicForm;
-import org.example.fractal.lib.IFractalEquation;
 import org.jetbrains.annotations.NotNull;
 
-public class MandelBrotFractalEquation implements IFractalEquation {
+public class ZSquaredDividesSinCMinusZSquared implements org.example.fractal.lib.IFractalEquation{
 	@Override
 	public @NotNull ComplexAlgebraicForm calculateFractalIteration(ComplexAlgebraicForm z, ComplexAlgebraicForm c) {
-		return z.times(z).plus(c);
+		return z.times(z).divides(c.minus(z.times(z)).sin());
 	}
 
 	@Override
 	public String getDisplayName() {
-		return "Mandelbrot";
+		return "Z^2 / sin(C - Z^2)";
 	}
 }
