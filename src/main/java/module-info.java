@@ -1,11 +1,14 @@
-import org.example.fractal.equations.*;
+import org.wswright.fractal.equations.*;
 
+/**
+ * This module contains equations for the jfx-fractal application.
+ */
 module org.example.fractal.equations {
 	requires org.jetbrains.annotations;
 	requires org.example.fractal.lib;
-	exports org.example.fractal.equations;
-	opens org.example.fractal.equations;
-	provides org.example.fractal.lib.IFractalEquation with
+	exports org.wswright.fractal.equations;
+	opens org.wswright.fractal.equations;
+	provides org.wswright.fractal.lib.IFractalEquation with
 			MandelBrotFractalEquation,
 			ZCubedOverC,
 			ZCubedPlusC,

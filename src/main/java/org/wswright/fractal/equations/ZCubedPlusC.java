@@ -1,7 +1,7 @@
-package org.example.fractal.equations;
+package org.wswright.fractal.equations;
 
-import org.example.fractal.lib.ComplexAlgebraicForm;
-import org.example.fractal.lib.IFractalEquation;
+import org.wswright.fractal.lib.ComplexAlgebraicForm;
+import org.wswright.fractal.lib.IFractalEquation;
 import org.jetbrains.annotations.NotNull;
 
 public class ZCubedPlusC implements IFractalEquation {
